@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="OnSideCountdown.MainPage">
+    <Grid AbsoluteLayout.LayoutFlags="All" 
+              AbsoluteLayout.LayoutBounds="0,0,1,1" 
+              BackgroundColor="Transparent">
+        <Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image
+                    Grid.ColumnSpan="3"
+                    Grid.Column="0">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <On Platform="iOS" Value="i0.jpg" />
+                            <On Platform="UWP" Value="Assets/i0.jpg" />
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>
+                <Image
+                    Grid.ColumnSpan="3"
+                    Grid.Column="3">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <On Platform="iOS" Value="i1.jpg" />
+                            <On Platform="UWP" Value="Assets/i1.jpg" />
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>
+                <Image
+                    Grid.ColumnSpan="3"
+                    Grid.Column="6">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <On Platform="iOS" Value="i2.jpg" />
+                            <On Platform="UWP" Value="Assets/i2.jpg" />
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter1" 
+                       Text="C" 
+                       Grid.Column="0"   
+                       BackgroundColor="DarkBlue"                       
+                       TextColor="White"                       
+                       FontSize="Header"                       
+                       FontAttributes="Bold"                       
+                       VerticalTextAlignment="Center"                       
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter2" 
+                       Text="O" Grid.Column="1"   
+                       BackgroundColor="DarkBlue"                  
+                       TextColor="White"                     
+                       FontSize="Header"                   
+                       FontAttributes="Bold"               
+                       VerticalTextAlignment="Center"      
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter3" 
+                       Text="U" Grid.Column="2"   
+                       BackgroundColor="DarkBlue"                
+                       TextColor="White"                    
+                       FontSize="Header"                    
+                       FontAttributes="Bold"                
+                       VerticalTextAlignment="Center"         
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter4" 
+                       Text="N" Grid.Column="3"   
+                       BackgroundColor="DarkBlue"                      
+                       TextColor="White"                       
+                       FontSize="Header"                     
+                       FontAttributes="Bold"                   
+                       VerticalTextAlignment="Center"            
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter5" 
+                       Text="T" Grid.Column="4"   
+                       BackgroundColor="DarkBlue"                      
+                       TextColor="White"                      
+                       FontSize="Header"                     
+                       FontAttributes="Bold"                    
+                       VerticalTextAlignment="Center"                   
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter6" 
+                       Text="D" Grid.Column="5"  
+                       BackgroundColor="DarkBlue"                       
+                       TextColor="White"                      
+                       FontSize="Header"                      
+                       FontAttributes="Bold"                  
+                       VerticalTextAlignment="Center"               
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter7" 
+                       Text="O" Grid.Column="6"   
+                       BackgroundColor="DarkBlue"                       
+                       TextColor="White"                       
+                       FontSize="Header"                       
+                       FontAttributes="Bold"                       
+                       VerticalTextAlignment="Center"                       
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter8" 
+                       Text="W" Grid.Column="7"   
+                       BackgroundColor="DarkBlue"                       
+                       TextColor="White"                       
+                       FontSize="Header"                      
+                       FontAttributes="Bold"                       
+                       VerticalTextAlignment="Center"                       
+                       HorizontalTextAlignment="Center"></Label>
+                <Label Grid.Row="1" 
+                       x:Name="lblLeter9" 
+                       Text="N" Grid.Column="8"   
+                       BackgroundColor="DarkBlue"                       
+                       TextColor="White"                       
+                       FontSize="Header"                       
+                       FontAttributes="Bold"                       
+                       VerticalTextAlignment="Center"                       
+                       HorizontalTextAlignment="Center"></Label>
+                <Button x:Name="btnVowel" 
+                       Text="Vowel"
+                         BackgroundColor="DarkBlue"                       
+                       TextColor="White"              
+                       Grid.Column="0"
+                        Clicked="btnVowel_Clicked"
+                       Grid.ColumnSpan="2"
+                        IsEnabled="False"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                       Grid.Row="2"                      
+                       FontSize="Header"
+                       FontAttributes="Bold">
+                </Button>
+                <Entry x:Name="entryWord" 
+                       Grid.Column="3"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Header"
+                       FontAttributes="Bold"
+                       Grid.ColumnSpan="3"
+                       Grid.Row="2">
+                </Entry>
+                <Label x:Name="lblScore"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Medium"
+                       Grid.ColumnSpan="3"
+                       Grid.Column="0"
+                       Grid.Row="3"
+                       FontAttributes="Bold">
+                </Label>
+                <Label x:Name="lblLongestWord"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Medium"
+                       Grid.ColumnSpan="3"
+                       Grid.Column="6"
+                       Grid.Row="3"
+                       FontAttributes="Bold">                    
+                </Label>
+                <Button x:Name="btnConsonant" 
+                       Text="Consonant"
+                       Grid.Column="7"
+                          BackgroundColor="DarkBlue"                       
+                       TextColor="White"              
+                        Clicked="btnConsonant_Clicked"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                       Grid.ColumnSpan="2"
+                        IsEnabled="False"
+                       Grid.Row="2"
+                       FontSize="Header"
+                       FontAttributes="Bold">
+                </Button>
+                <Label x:Name="lblErrorMessage" 
+                       Grid.Column="0"
+                       Grid.ColumnSpan="9"
+                       Grid.Row="3"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="Header"
+                       FontAttributes="Bold"
+                       TextColor="Red">
+                </Label>
+                <Button Text="Press Here to Start Game" 
+                        x:Name="btnSubmit"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="9"
+                        Grid.Row="4"
+                        Clicked="btnSubmit_Clicked"
+                        FontSize="Header"
+                        FontAttributes="Bold"
+                        BackgroundColor="Green">
+                </Button>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>
